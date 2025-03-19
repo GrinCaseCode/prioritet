@@ -825,6 +825,7 @@
         margin-bottom: -20px;
     }
     .footer {
+        padding-top: 35px;
         padding-bottom: 120px;
         min-height: initial;
         background-image: url(../img/bg_footer_mob.png);
@@ -844,6 +845,9 @@
         background-repeat: repeat-x;
         background-position: center bottom;
         background-size: auto 100%;
+    }
+    .logo-wrap + .footer__info {
+        margin-top: 25px;
     }
     .footer__contacts, .footer__info {
         font-size: 13px;
