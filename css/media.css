@@ -183,6 +183,11 @@
     .header.nav-up {
         transform: translateY(-160px)
     }
+    .item-form textarea {
+        height: 250px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
 }
 @media only screen and (max-width : 1600px) {
     body {
@@ -721,6 +726,11 @@
     }
     .menu ul {
         width: 210px;
+    }
+    .item-form textarea {
+        height: 200px;
+        padding-top: 20px;
+        padding-bottom: 15px;
     }
 }
 

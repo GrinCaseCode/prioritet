@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.1" />
-	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
 </head>
 <body>
 
@@ -127,7 +127,7 @@
 					<div class="col-lg-6">
 						<h1 class="title-big">Агрохимикаты и Семена </h1>
 						<div class="title-small">Осуществляем поставки семян и средств защиты растений по всему ЮФО в кратчайшие сроки</div>
-						<a href="#" class="btn-main">Запросить прайс</a>
+						<a href="#modal-callback" class="btn-main fancybox">Запросить прайс</a>
 					</div>
 					<div class="col-lg-6">
 						<div class="billbord__image">
@@ -1280,6 +1280,34 @@
 		
 	</div>
 
+	<div id="modal-callback" class="modal-block">
+		<div class="form-page">
+			<div class="title-form">Оставить заявку</div>
+			<div class="descr-form">Наши менеджеры свяжутся с вами в течение 15 минут для уточнения деталей заказа.</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="item-form">
+					<input type="tel" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" class="input-phone" inputmode="numeric" required>
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="E-mail" required>
+				</div>
+				<div class="item-form">
+					<textarea placeholder="Комментарий"></textarea>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required/>
+						<span>Я согласен с условиями обработки персональных данных</span>
+					</label>
+				</div>
+				<input type="submit" value="Отправить" class="btn-main">
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -1293,7 +1321,7 @@
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.1"></script>
+	<script src="js/common.js?ver=1.2"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function () {

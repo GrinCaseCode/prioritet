@@ -963,3 +963,22 @@ form {
 .phone-mob {
 	display: none;
 }
+.modal-block {
+	display: none;
+	padding: 0;
+	background: transparent;
+}
+.item-form textarea {
+	height: 278px;
+	padding-top: 24px;
+	padding-bottom: 15px;
+	resize: none;
+}
+.fancybox-slide--html .modal-block .fancybox-close-small {
+    color: #fff;
+    opacity: 1;
+    padding: 7px;
+}
+.modal-block .form-page {
+	background-image: url(../img/bg_form2.png);
+}
