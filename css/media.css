@@ -982,6 +982,12 @@
     .billbord .title-big {
         max-width: 360px;
     }
+    .fancybox-slide {
+        padding: 15px;
+    }
+    .form-page .checkbox {
+        justify-content: center;
+    }
 }
 
 /* Small Devices, Tablets */
