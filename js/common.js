@@ -44,13 +44,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	  lastScrollTop = st; 
   }
 
-  $('.tabs li a').click(function(event) {
+  $('.tabs:not(".no-tabs") li a').click(function(event) {
     event.preventDefault();
     $(this).parent().parent().find("li").removeClass('active');
     $(this).parent().addClass('active');
     $(".tab-pane").fadeOut(0);
     var selectTab = $(this).attr("href");
     $(selectTab).fadeIn(200);
+  });
+
+  $(".unit-contact__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+    $(this).parent().siblings(".unit-contact").removeClass("active");
+    $(this).parent().siblings(".unit-contact").find(".unit-contact__content").slideUp(200);
   });
 
 	//плавный скролл
@@ -82,7 +89,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".menu-overlay").fadeOut(200);
 	});
 
-	$(".menu__haschild > a").click(function(e) {
+	$(".menu-mobile .menu__haschild > a").click(function(e) {
 		e.preventDefault();
 		$(this).parent().siblings().removeClass("active");
 		$(this).parent().siblings().find("ul").slideUp(200);
@@ -140,6 +147,64 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			}
 			]
 		});
+
+		$('.slider-catalog').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			touchThreshold: 1000,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						arrows: false,
+						dots: true,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						dots: true,
+					}
+				}
+				]
+			});
+
+			$('.slider-news').slick({
+				arrows: true,
+				dots: false,
+				infinite: true,
+				touchThreshold: 1000,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+				nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							arrows: false,
+							dots: true,
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							arrows: false,
+							dots: true,
+						}
+					}
+					]
+				});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
